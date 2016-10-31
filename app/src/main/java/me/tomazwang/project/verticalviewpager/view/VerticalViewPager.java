@@ -27,7 +27,7 @@ public class VerticalViewPager extends ViewPager {
         // use PageTransformer to implement vertical viewpager
         setPageTransformer(true, new VerticalViewPager.PageTransformer());
 
-        // shut overscroll shadow
+        // disable over scroll shadow
         setOverScrollMode(OVER_SCROLL_NEVER);
     }
 
@@ -78,7 +78,7 @@ public class VerticalViewPager extends ViewPager {
                 // show the page
                 page.setVisibility(View.VISIBLE);
 
-                // get page back to the center of screen since it will get swipe off by default.
+                // get page back to the center of screen since it will get swipe horizontally by default.
                 page.setTranslationX(page.getWidth() * -position);
 
                 // set Y position to swipe in vertical direction.

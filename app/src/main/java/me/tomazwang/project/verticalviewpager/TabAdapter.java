@@ -50,7 +50,7 @@ public class TabAdapter extends BaseAdapter implements AdapterView.OnItemClickLi
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        // current not using viewHolder pattern cause there aren't too many tabs in demo project
+        // Currently not using viewHolder pattern cause there aren't too many tabs in the demo project
 
         if(view == null){
             view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_tab, viewGroup, false);
@@ -71,8 +71,6 @@ public class TabAdapter extends BaseAdapter implements AdapterView.OnItemClickLi
 
     /**
      * Return item view at the given position or null if position is not visible.
-     * @param pos
-     * @return
      */
     public View getViewByPosition(int pos) {
         if(listView == null){

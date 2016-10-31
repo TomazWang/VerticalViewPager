@@ -80,12 +80,14 @@ public class MainActivity extends AppCompatActivity implements TabAdapter.OnItem
         return super.onOptionsItemSelected(item);
     }
 
+    // Implements TabAdapter.OnItemClickListener
     @Override
     public void selectItem(int position) {
         viewPager.setCurrentItem(position, true);
     }
 
 
+    // Implements ViewPager.OnPageChangeListener
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
