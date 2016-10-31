@@ -7,10 +7,10 @@ It's ViewPager but in vertical.
  - A custom vertical version of ViewPager
  - Sample code to use it.
  - Vertical tabs (which is implements from ListView)
- - More information and how it works in [here][til].
-
 
 ![With tabs][with_tabs]
+
+### More information and how it works in [here][til].
 
 [img]:http://i.imgur.com/o91LG42.gif
 [til]:https://github.com/TomazWang/TIL-today-i-learned/blob/master/Android/VerticalViewPager.md
